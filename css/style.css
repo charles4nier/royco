@@ -30,7 +30,10 @@ header {
   position: relative;
   z-index: 1;
   padding: 8px 10px;
+  background: -webkit-linear-gradient(left top, #7ab800, #3d7500);
+  background: -o-linear-gradient(left top, #7ab800, #3d7500);
   background: -moz-linear-gradient(left top, #7ab800, #3d7500);
+  background: linear-gradient(left top, #7ab800, #3d7500);
 }
 
 header h1 {
@@ -64,7 +67,10 @@ main {
 .section1 {
   display: flex;
   justify-content: space-around;
-  background:-moz-linear-gradient(left top,#fff101, #e39002);
+  background: -webkit-linear-gradient(left top,#fff101, #e39002);
+  background: -o-linear-gradient(left top,#fff101, #e39002);
+  background: -moz-linear-gradient(left top,#fff101, #e39002);
+  background: linear-gradient(left top,#fff101, #e39002);
   width: 66%;
 }
 
@@ -93,7 +99,10 @@ figure p {
 
 .section2 {
   width: 33.9%;
-  background: -moz-linear-gradient(left top, #7ab800, #3d7500) ;
+  background: -webkit-linear-gradient(left top, #7ab800, #3d7500);
+  background: -o-linear-gradient(left top, #7ab800, #3d7500);
+  background: -moz-linear-gradient(left top, #7ab800, #3d7500);
+  background: linear-gradient(left top, #7ab800, #3d7500);
   border-left: 1px solid white;
   padding: 15px 0;
 }
