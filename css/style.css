@@ -26,27 +26,39 @@ header {
   display: flex;
   width: 150px;
   margin-bottom: -5%;
-  margin-left: 13%;
   position: relative;
   z-index: 1;
-  padding: 8px 10px;
   background: -webkit-linear-gradient(left top, #7ab800, #3d7500);
   background: -o-linear-gradient(left top, #7ab800, #3d7500);
   background: -moz-linear-gradient(left top, #7ab800, #3d7500);
   background: linear-gradient(left top, #7ab800, #3d7500);
+  animation: headerMvt 0.8s both;
+  animation-delay: 0.2s;
+}
+
+@keyframes headerMvt {
+  0% {
+    transform: translateX(-40%);
+    padding: 0;
+    opacity: 0;
+  }
+
+  3% {
+    opacity: 1;
+  }
+
+  100% {
+    transform: translateX(150%);
+    padding: 8px 10px;
+  }
 }
 
 header h1 {
   color: black;
   font-family: 'Raleway-Bold';
   line-height: 26px;
-}
-
-canvas {
-  /*background: -moz-linear-gradient(#feaa09, #fffae3);
-  margin-left: 10%;
-  display: block;
-  position: relative;*/
+  animation: hideToShow 0.5s both;
+  animation-delay: 0.6s;
 }
 
 .couverturePhoto {
@@ -84,12 +96,16 @@ figure {
 figure img {
   border-radius: 50%;
   margin: 15px auto;
+  animation: hideToShow 0.8s both;
+  animation-delay: 0.8s;
 }
 
 .title {
   font-size: 2em;
   color: black;
   text-align: center;
+  animation: hideToShow 0.5s both;
+  animation-delay: 0.6s;
 }
 
 figure p {
@@ -109,16 +125,16 @@ figure p {
 
 .section2 p, .section2 a {
   padding: 0 40px;
-}
-
-ul {
-  padding: 0;
+  animation: hideToShow 0.5s both;
+  animation-delay: 0.8s;
 }
 
 li {
   list-style-type: none;
   padding: 0 40px;
   margin-top: 15px;
+  animation: hideToShow 0.5s both;
+  animation-delay: 0.8s;
 }
 
 a {
@@ -165,6 +181,16 @@ footer ul li {
 
 .bold {
   font-family: 'Raleway-Bold';
+}
+
+@keyframes hideToShow {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
 }
 
 @media all and (max-width: 1024px) {
