@@ -166,3 +166,16 @@ footer ul li {
 .bold {
   font-family: 'Raleway-Bold';
 }
+
+@media all and (max-width: 1024px) {
+  .section1 {
+    width: 100%;
+    flex-wrap: wrap;
+  }
+
+  .section2 {
+    width: 100%;
+    border-top: 1px solid white;
+    border-left: none;
+  }
+}
